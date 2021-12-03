@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace AdventOfCode.DayTwo
+﻿namespace AdventOfCode._02
 {
-    public class Coordinate
+    internal class Coordinate
     {
         private int simpleHorizontal = 0;
         private int horizontal = 0;
@@ -38,7 +36,8 @@ namespace AdventOfCode.DayTwo
         {
             return this.simpleDepth * this.simpleHorizontal;
         }
-        internal int GetAimedMultipliedValue(){
+        internal int GetAimedMultipliedValue()
+        {
             return this.depth * this.horizontal;
         }
     }

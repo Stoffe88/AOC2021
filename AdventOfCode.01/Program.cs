@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace AdventOfCode.DayOne
+namespace AdventOfCode._01
 {
     class Program
     {
         static void Main(string[] args)
         {
             LinkedList<int> depths = new LinkedList<int>();
-            foreach (string line in File.ReadAllLines(@"C:\Users\kkalleru\source\repos\Personal\advent_of_code\AdventOfCode\AdventOfCode.DayOne\input.txt"))
+            foreach (string line in File.ReadAllLines(@"C:\Users\kkalleru\source\repos\Personal\advent_of_code\AdventOfCode\AdventOfCode.01\input.txt"))
             {
                 depths.AddLast(int.Parse(line));
             };

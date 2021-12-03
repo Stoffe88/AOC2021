@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace AdventOfCode.DayTwo
+namespace AdventOfCode._02
 {
     class Program
     {
@@ -19,7 +19,5 @@ namespace AdventOfCode.DayTwo
 
             Console.ReadKey();
         }
-
-
     }
 }
