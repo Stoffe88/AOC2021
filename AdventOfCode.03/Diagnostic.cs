@@ -30,15 +30,12 @@ namespace AdventOfCode._03
                 bits.Add(0);
             }
 
-            for (int i = 0; i < diagnosticData.Count-1; i++)
+            for (int i = 0; i < diagnosticData.Count; i++)
             {
-                diagnosticData.ForEach(x =>
+                for (int j = 0; j < bits.Count; j++)
                 {
-                    for (int i = 0; i < x.Length -1; i++)
-                    {
-                        bits[i] += int.Parse(x[i].ToString()) > 0 ? 1 : -1;
-                    }
-                });
+                    bits[j] += int.Parse(diagnosticData[i][j].ToString()) > 0 ? 1 : -1;
+                }
             }
             bits.ForEach(x =>
             {
