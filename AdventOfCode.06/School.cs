@@ -13,7 +13,8 @@ namespace AdventOfCode._06
         internal void CreateSchool(string fishData)
         {
             this.fishs = new long[9];
-            fishData.Split(',').ToList().ConvertAll(x => int.Parse(x))
+            fishData.Split(',').ToList()
+                .ConvertAll(x => int.Parse(x))
                 .GroupBy(x => x)
                 .ToList()
                 .ForEach(x => this.fishs[x.Key] = x.Count());

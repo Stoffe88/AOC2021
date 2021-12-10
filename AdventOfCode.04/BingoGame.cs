@@ -105,20 +105,7 @@ namespace AdventOfCode._04
             {
                 numbers.Remove("");
             }
-            //for (int i = 0; i < this.numbers.Length; i++)
-            //{
-                this.numbers = numbers.ConvertAll<int>(x => int.Parse(x)).ToArray();
-                //try
-                //{
-                //    int.TryParse(numbers[i], out this.numbers[i]);
-                //}
-                //catch (Exception)
-                //{
-                //    int.TryParse(numbers[i++], out this.numbers[i]);
-                //    i++;// this.numbers[i] = int.Parse(numbers[i]);
-
-                //}
-            //}
+            this.numbers = numbers.ConvertAll(x => int.Parse(x)).ToArray();
         }
 
         internal int CalculatePoints(int bingoNumber)
